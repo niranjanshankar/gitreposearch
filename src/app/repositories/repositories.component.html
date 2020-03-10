@@ -4,8 +4,8 @@
     [disabled]="searchTerm.trim() === ''">Search</button>
 </div>
 
-<div *ngIf="!repositories" class="align-center">
-  Enter a user name and search for their public repositories.
+<div *ngIf="!repositories" class="align-center capitalize">
+  enter a user name and search for their public repositories.
 </div>
 
 <!-- Responsive columns -->
@@ -18,9 +18,10 @@
     </div>
   </div>
   <ng-template #noRepoFound>
-    <p class="no-repo-found-message align-center">Sorry, no repositories found for this user. Please try with a
+    <p class="no-repo-found-message align-center capitalize">sorry, no repositories found for this user. Please try with
+      a
       different name.</p>
   </ng-template>
 </ng-container>
 
-<p *ngIf="isError" class="error-message">There was an error loading repositories. Please try again!</p>
+<p *ngIf="isError" class="error-message capitalize">There was an error loading repositories. Please try again!</p>
