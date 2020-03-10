@@ -9,6 +9,7 @@ import { GithubService } from '../github.service';
 })
 export class ContributorsComponent implements OnInit {
 
+  // Could use an interfae to model this
   public contributors: Array<any>;
   public repo: string;
 
