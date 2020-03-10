@@ -11,6 +11,8 @@ ng serve
 4. Upon successful completion, go to a browser and type:
 https://localhost:4200/
 
+5. Sample user names: google, python, niranjanshankar
+
 # Gitreposearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
