@@ -19,6 +19,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Bulma framework (https://bulma.io/) has been used for CSS layout
 Basic pagination implemented using GitHub API's response headers
 
+# What is it about?
+
+1. This project lets you search public GitHub repositories usig usernames.
+
+2. The landing page is a repository page. A user can search based a GitHub username (e.g., python, angular, google, niranjanshankar, etc.) This will show them a list of repositories related to the user. 
+
+3. Each page displays a max of 15 repositories and there are buttons below to help user navigate to different pages.
+
+4. On these repositories, the user can click on the "contributors" button to see who are the other cotributors to that repository.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
