@@ -1,3 +1,16 @@
+# To run this project:
+1. Close this project using: 
+git clone https://github.com/niranjanshankar/gitreposearch.git
+
+2. Then, inside the project folder, run:
+npm install
+
+3. After the packaes are all installed, type:
+ng serve
+
+4. Upon successful completion, go to a browser and type:
+https://localhost:4200/
+
 # Gitreposearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
