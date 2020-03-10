@@ -1,5 +1,5 @@
 # To run this project:
-1. Close this project using: 
+1. Clone this project using: 
 git clone https://github.com/niranjanshankar/gitreposearch.git
 
 2. Then, inside the project folder, run:
