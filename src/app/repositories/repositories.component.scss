@@ -12,3 +12,13 @@
 .no-repo-found-message {
     color: red;
 }
+
+.pagination-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    button{
+        margin: 0 4px;
+    }
+}

@@ -27,3 +27,8 @@
 
 <p *ngIf="isError" class="error-message capitalize-first-letter">There was an error loading repositories. Please try
   again!</p>
+
+<div class="pagination-buttons" *ngIf="pages && pages.length > 0">
+  <button class="button is-primary" *ngFor="let page of pages"
+    (click)="getRepositories(page.url)">{{page.title}}</button>
+</div>
