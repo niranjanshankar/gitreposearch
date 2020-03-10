@@ -1,0 +1,4 @@
+<div class="search-container">
+  <input type="text" placeholder="Search by username" [(ngModel)]="searchTerm">
+  <button class="button is-info" [disabled]="searchTerm.trim() === ''">Search</button>
+</div>
