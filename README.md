@@ -23,7 +23,7 @@ Basic pagination implemented using GitHub API's response headers
 
 1. This project lets you search public GitHub repositories using usernames.
 
-2. The landing page is a repository page. A user can search based a GitHub username (e.g., python, angular, google, niranjanshankar, etc.) This will show them a list of repositories related to the user. 
+2. The landing page is a repository page. A user can search based on a GitHub username (e.g., python, angular, google, niranjanshankar, etc.) This will show them a list of repositories related to the user. 
 
 3. Each page displays a max of 15 repositories and there are buttons below to help user navigate to different pages.
 
