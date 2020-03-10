@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 
@@ -15,7 +17,8 @@ import { RepositoriesComponent } from './repositories/repositories.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
