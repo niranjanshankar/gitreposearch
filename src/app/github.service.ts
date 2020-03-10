@@ -15,4 +15,8 @@ export class GithubService {
   public getRepositoriesByUsername(userName: string): Observable<any> {
     return this.http.get(this.apiUrl + '/users/' + userName + '/repos');
   }
+
+  public getContributorsByRepoName(owner: string, repo: string): Observable<any> {
+    return this.http.get(this.apiUrl + '/repos/' + owner + '/' + repo + '/contributors');
+  }
 }

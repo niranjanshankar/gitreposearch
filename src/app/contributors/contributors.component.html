@@ -1,3 +1,14 @@
-<p>
-  contributors works!
-</p>
+<h3 class="page-heading">List of contributors for {{repo}}</h3>
+
+<ng-container *ngIf="contributors">
+  <div class="contributors columns" *ngIf="contributors.length > 0">
+    <div *ngFor="let contributor of contributors"
+      class="column is-one-third-desktop is-one-fifth-widescreen is-half-tablet is-full-mobile">
+      <app-contributor [contributor]="contributor"></app-contributor>
+    </div>
+  </div>
+</ng-container>
+
+<div *ngIf="contributors === null">
+  <p>There are no contributors for this repo.</p>
+</div>
