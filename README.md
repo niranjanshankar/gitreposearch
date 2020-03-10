@@ -14,6 +14,8 @@ https://localhost:4200/
 # Gitreposearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
+Bulma framework (https://bulma.io/) has been used for CSS layout
+Basic pagination implemented using GitHub API's response headers
 
 ## Development server
 
