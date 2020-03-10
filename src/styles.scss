@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-.capitalize {
+.capitalize-first-letter::first-letter, .title {
     text-transform: capitalize;
 }
 
