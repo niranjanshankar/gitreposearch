@@ -1,4 +1,25 @@
 <div class="search-container">
   <input type="text" placeholder="Search by username" [(ngModel)]="searchTerm">
-  <button class="button is-info" [disabled]="searchTerm.trim() === ''">Search</button>
+  <button class="button is-info" (click)="searchUserRepositories()"
+    [disabled]="searchTerm.trim() === ''">Search</button>
 </div>
+
+<div *ngIf="!repositories" class="initial-message">
+  Enter a user name and search for their public repositories.
+</div>
+
+<!-- Responsive columns -->
+<!-- https://bulma.io/documentation/columns/responsiveness/ -->
+<ng-container *ngIf="repositories">
+  <div class="columns" *ngIf="repositories.length > 0; else noRepoFound">
+    <div *ngFor="let repo of repositories"
+      class="column is-one-third-desktop is-one-fifth-widescreen is-half-tablet is-full-mobile">
+      <app-repository [repo]="repo"></app-repository>
+    </div>
+  </div>
+  <ng-template #noRepoFound>
+    <p class="no-repo-found-message">Sorry, no repositories found for this user. Please try with a different name.</p>
+  </ng-template>
+</ng-container>
+
+<p *ngIf="isError" class="error-message">There was an error loading repositories. Please try again!</p>

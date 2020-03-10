@@ -8,11 +8,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
+import { RepositoryComponent } from './repository/repository.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RepositoriesComponent
+    RepositoriesComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,

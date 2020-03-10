@@ -8,3 +8,16 @@
         padding: 0 8px;
     }
 }
+
+.initial-message {
+    text-align: center;
+}
+
+.no-repo-found-message {
+    text-align: center;
+    color: red;
+}
+
+.columns {
+    flex-wrap: wrap;
+}

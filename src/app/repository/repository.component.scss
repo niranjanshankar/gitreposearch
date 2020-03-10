@@ -1,0 +1,21 @@
+$font-size: 20px;
+$line-height: 1.125;
+$lines-to-show: 2;
+
+// CSS to restrict the Repo name to 2 lines
+// used for longer names
+.title {
+    margin-bottom: 4px;
+    display: block;
+    /* Fallback for non-webkit */
+    display: -webkit-box;
+    height: $font-size * $line-height * $lines-to-show;
+    /* Fallback for non-webkit */
+    margin: 0 auto;
+    font-size: $font-size;
+    line-height: $line-height;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
