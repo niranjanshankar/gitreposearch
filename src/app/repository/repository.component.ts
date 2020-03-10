@@ -16,4 +16,8 @@ export class RepositoryComponent implements OnInit {
   ngOnInit() {
   }
 
+  public gotoContributorsPage(): void {
+    this.router.navigateByUrl('/contributors/' + this.repo.owner.login + '/' + this.repo.name);
+  }
+
 }

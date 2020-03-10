@@ -9,12 +9,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { RepositoryComponent } from './repository/repository.component';
+import { ContributorsComponent } from './contributors/contributors.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RepositoriesComponent,
-    RepositoryComponent
+    RepositoryComponent,
+    ContributorsComponent
   ],
   imports: [
     BrowserModule,
