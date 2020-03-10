@@ -2,7 +2,7 @@
 1. Clone this project using: 
 git clone https://github.com/niranjanshankar/gitreposearch.git
 
-2. Then, inside the project folder, run:
+2. Then, go inside the project folder gitreposearch, run the cmd:
 npm install
 
 3. After the packaes are all installed, type:
