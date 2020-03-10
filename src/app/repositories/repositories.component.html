@@ -4,7 +4,7 @@
     [disabled]="searchTerm.trim() === ''">Search</button>
 </div>
 
-<div *ngIf="!repositories" class="initial-message">
+<div *ngIf="!repositories" class="align-center">
   Enter a user name and search for their public repositories.
 </div>
 
@@ -18,7 +18,8 @@
     </div>
   </div>
   <ng-template #noRepoFound>
-    <p class="no-repo-found-message">Sorry, no repositories found for this user. Please try with a different name.</p>
+    <p class="no-repo-found-message align-center">Sorry, no repositories found for this user. Please try with a
+      different name.</p>
   </ng-template>
 </ng-container>
 

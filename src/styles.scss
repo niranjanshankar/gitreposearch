@@ -11,3 +11,12 @@
 @import "../node_modules/bulma/sass/components/_all";
 @import "../node_modules/bulma/sass/grid/_all";
 @import "../node_modules/bulma/sass/layout/_all";
+
+// Common styles
+.align-center {
+    text-align: center;
+}
+
+.columns {
+    flex-wrap: wrap;
+}
